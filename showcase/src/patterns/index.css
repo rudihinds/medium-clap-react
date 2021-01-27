@@ -12,6 +12,14 @@
 
 }
 
+h1 {
+  display: block;
+  position: relative;
+  top: 120px;
+  left: 140px
+
+}
+
 .clapContainer {
   transform: translate(-280px, -150px);
 }

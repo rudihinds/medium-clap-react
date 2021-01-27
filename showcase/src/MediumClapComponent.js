@@ -36,7 +36,7 @@ const useClapAnimation = ({ clapCountEl, clapEl, clapTotalEl }) => {
 
     const triangleBurst = new mojs.Burst({
       parent: clapEl,
-      radius: { 50: 95 },
+      radius: { 70: 100 },
       count: 5,
       angle: 30,
       children: {
@@ -54,7 +54,7 @@ const useClapAnimation = ({ clapCountEl, clapEl, clapTotalEl }) => {
 
     const circleBurst = new mojs.Burst({
       parent: clapEl,
-      radius: { 50: 75 },
+      radius: { 60: 90 },
       angle: 25,
       duration: tlDuration,
       children: {
