@@ -2,13 +2,20 @@
 .clap {
   position: relative;
   outline: 1px solid transparent;
-  border-radius: 50%;
+  border-radius: 70%;
   border: 1px solid #bdc3c7;
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   background: none;
   user-select: none;
+  
+
 }
+
+.clapContainer {
+  transform: translate(-280px, -150px);
+}
+
 .clap:after {
   content: "";
   position: absolute;
@@ -26,16 +33,18 @@
 }
 .clap:hover:after {
   animation: shockwave 1s ease-in infinite;
+  left: 19px;
+  top: 18px
 }
 
 @keyframes shockwave {
   0% {
-    transform: scale(1);
+    transform: scale(1.5);
     box-shadow: 0 0 2px #27ae60;
     opacity: 1;
   }
   100% {
-    transform: scale(1);
+    transform: scale(1.5);
     opacity: 0;
     box-shadow: 0 0 50px #145b32, inset 0 0 10px #27ae60;
   }
@@ -45,7 +54,7 @@
 .count {
   position: absolute;
   top: -50px;
-  left: 20px;
+  left: 38px;
   font-size: 0.8rem;
   color: white;
   background: #27ae60;
@@ -61,7 +70,7 @@
   font-size: 0.8rem;
   width: 80px;
   text-align: center;
-  left: 0;
+  left: 18px;
   top: -22px;
   color: #bdc3c7;
 }
@@ -72,6 +81,7 @@
   fill: none;
   stroke: #27ae60;
   stroke-width: 2px;
+  transform: scale(2,2)
 }
 
 .icon.checked {
